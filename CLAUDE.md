@@ -10,11 +10,19 @@ Ella is completing an MBA and is learning to build AI systems. She helps run her
 - captured_urls.json is every URL ever included in a past digest, checked to avoid repeats
 - digest.md is the most recent written digest
 
+## What the digest is for
+The main goal is upskilling: helping Ella use AI better in her work and life, for productivity and better outputs, and keep learning what is new. A small amount of major news is useful for grounding, but business news is not the focus.
+
+Rank items by relevance to that goal, judged from their full_text:
+- Most relevant: practical techniques and workflows; how practitioners actually use and build with AI (Claude Code, agents, skills, memory, automation); what new models or tools let her do differently; anything she could apply to India Grace (finance/cash flow, Meta ads, stock, operations) or to agents for her personal admin
+- Least relevant: funding, acquisitions, IPOs, company business news, politics and policy debates, and science or industry news with no bearing on how she works
+
 ## Digest rules
-- Group items by author/source
 - First skip anything already in captured_urls.json
-- Then cap at 3 items per author maximum from what remains, keeping the most recent by date if there are more
-- Each item: title, date, link, a 2-3 sentence plain language summary based on its full_text field (the actual article content, up to about 3000 characters), not the short feed summary. Only say a summary isn't available if full_text is also missing, or is clearly not real content (a paywall notice, a cut-off teaser, boilerplate). Never invent content
+- Main section, titled "Worth your time": the most relevant remaining items, ordered by relevance (most relevant first), not by date or source. At most 8 items in total and at most 3 from any one source. A source can contribute nothing if none of its items are relevant enough
+- Each main item: title, source, date, link, a 2-3 sentence plain language summary based on its full_text field (the actual article content, up to about 3000 characters), not the short feed summary, then one line starting "Why this is useful to you:" linking it to Ella's work or skills. Only say a summary isn't available if full_text is also missing, or is clearly not real content (a paywall notice, a cut-off teaser, boilerplate). Never invent content
+- Section titled "Major news": at most 5 one-line items for grounding (major model releases, significant industry or safety events), each with its link. Only include genuinely major news, not items that just failed to make the main section. Do not repeat anything already in "Worth your time"
+- Items not chosen for either section are left out and not added to captured_urls.json, so they can be considered again next week while still inside the fetch window
 - Add a section titled "Ideas to try" with at most 3 concrete suggestions, tied specifically to India Grace or to Ella's own Claude Code / automation building, drawn from that week's actual items, not generic advice
 - Add a section titled "Sources that failed" listing anything in digest_data.json's failed list
 - Section titles use a colon, e.g. "Digest: week of 28 September 2026" using the most recent Monday as the week start
