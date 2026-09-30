@@ -49,8 +49,6 @@ SOURCES = [
     {"name": "Benedict Evans", "url": "https://www.ben-evans.com/benedictevans?format=rss", "type": "feed"},
     # The old /feed.xml address now returns 404; this is the current feed.
     {"name": "Daniel Miessler", "url": "https://danielmiessler.com/feed.rss", "type": "feed"},
-    # The old /rss address now returns 404; this is the current feed.
-    {"name": "The Rundown", "url": "https://www.therundown.ai/feed", "type": "feed"},
     {"name": "Nate B Jones", "url": "https://natesnewsletter.substack.com/feed", "type": "feed"},
     {"name": "Lenny's Newsletter", "url": "https://www.lennysnewsletter.com/feed", "type": "feed"},
     {"name": "Jon Loomer (Meta ads)", "url": "https://www.jonloomer.com/feed/", "type": "feed"},

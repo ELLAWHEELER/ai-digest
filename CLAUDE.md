@@ -19,6 +19,7 @@ Rank items by relevance to that goal, judged from their full_text:
 
 ## Digest rules
 - First skip anything already in captured_urls.json
+- Choose in two passes to keep token use down. Pass 1: for every remaining item, look only at the title, source and the first 500 characters of full_text, and shortlist the 15-20 most promising (including any candidates for "Major news"). Pass 2: read the full full_text only for shortlisted items, then rank and write. Do not print or read the full text of items that were not shortlisted
 - Main section, titled "Worth your time": the most relevant remaining items, ordered by relevance (most relevant first), not by date or source. At most 8 items in total and at most 3 from any one source. A source can contribute nothing if none of its items are relevant enough
 - Each main item: title, source, date, link, a 2-3 sentence plain language summary based on its full_text field (the actual article content, up to about 3000 characters), not the short feed summary, then one line starting "Why this is useful to you:" linking it to Ella's work or skills. Only say a summary isn't available if full_text is also missing, or is clearly not real content (a paywall notice, a cut-off teaser, boilerplate). Never invent content
 - Claude Code releases: combine all new releases into a single "Worth your time" item titled "What's new in Claude Code", ranked like any other item. Summarise the changes that matter for how Ella works rather than listing every fix, and list each release's link so they are all captured. It counts as one item
