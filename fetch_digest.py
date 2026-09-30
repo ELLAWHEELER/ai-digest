@@ -47,11 +47,17 @@ SOURCES = [
     {"name": "swyx, Latent Space", "url": "https://www.latent.space/feed", "type": "feed"},
     {"name": "Simon Willison", "url": "https://simonwillison.net/atom/entries/", "type": "feed"},
     {"name": "Benedict Evans", "url": "https://www.ben-evans.com/benedictevans?format=rss", "type": "feed"},
-    {"name": "Andrej Karpathy", "url": "https://karpathy.bearblog.dev/feed/", "type": "feed"},
     # The old /feed.xml address now returns 404; this is the current feed.
     {"name": "Daniel Miessler", "url": "https://danielmiessler.com/feed.rss", "type": "feed"},
     # The old /rss address now returns 404; this is the current feed.
     {"name": "The Rundown", "url": "https://www.therundown.ai/feed", "type": "feed"},
+    {"name": "Nate B Jones", "url": "https://natesnewsletter.substack.com/feed", "type": "feed"},
+    {"name": "Lenny's Newsletter", "url": "https://www.lennysnewsletter.com/feed", "type": "feed"},
+    {"name": "Jon Loomer (Meta ads)", "url": "https://www.jonloomer.com/feed/", "type": "feed"},
+    {"name": "Harper Reed", "url": "https://harper.blog/index.xml", "type": "feed"},
+    {"name": "Hamel Husain", "url": "https://hamel.dev/index.xml", "type": "feed"},
+    # GitHub publishes each Claude Code release as an Atom feed entry.
+    {"name": "Claude Code releases", "url": "https://github.com/anthropics/claude-code/releases.atom", "type": "feed"},
     {"name": "Dario Amodei essays", "url": "https://darioamodei.com/", "type": "dario"},
     {"name": "Anthropic news", "url": "https://www.anthropic.com/news", "type": "anthropic"},
     {"name": "Anthropic engineering", "url": "https://www.anthropic.com/engineering", "type": "anthropic"},
