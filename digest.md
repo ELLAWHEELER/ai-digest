@@ -1,69 +1,84 @@
-# Digest: week of 5 October 2026
+# Digest: week of 12 October 2026
 
 ## Worth your time
 
-**Claude's new auto eval tool** (30 September 2026)
-Hamel Husain
-https://hamel.dev/blog/posts/claude-auto-evals/
-Anthropic added a build_eval and hill-climb command to its claude-api plugin, letting Claude Code build evals, check the graders it creates, and improve an application against them. Hamel Husain and Isaac Flath tested it live on real conversation transcripts from a customer service bot and found it pushes you to write an eval before you have looked at the underlying data, asks you to judge labels without enough context, and tends to build evaluators that check too many different failures at once.
-Why this is useful to you: it is a concrete first look at a new Claude Code feature for building evals, with hands on lessons, look at your data first and keep each eval narrowly scoped, that you can apply directly when you test and refine your own Claude Code skills and automations.
+### A new feature for my blog, built using my voice
+Source: Simon Willison
+Date: 2026-10-09
+Link: https://simonwillison.net/2026/Oct/9/built-using-my-voice/
 
-**Jev for beginners: how to use it and what to build** (28 September 2026)
-Lenny's Newsletter
-https://www.lennysnewsletter.com/p/jev-for-beginners-how-to-use-it-and
-Claire Vo tests Jev, a new decision model from TypeSafe AI that returns structured choices, scores and probabilities instead of generated text, priced at 4 cents per million input tokens with no output charge. She runs it on five real projects, including categorising 1,700 pull requests for 9 cents, triaging Gmail with Jev scoring plus an LLM follow up, and turning 4,500 YouTube comments into a searchable dashboard, and finds it works best paired with a normal LLM rather than used alone.
-Why this is useful to you: these are ready to copy patterns for cheap, structured classification such as inbox triage or sorting customer feedback, which could cut the cost of automations you build for India Grace or for your own Claude Code projects.
+Simon built a whole new page for his blog, including a database model, imports and templates, almost entirely by talking to an AI coding assistant out loud while he cooked dinner, using the voice mode in a coding tool connected to his local project. He describes starting a dev server first so he could see progress visually, then talking through requirements in plain, unpolished speech, with the model asking clarifying questions and writing the code as they went.
+Why this is useful to you: a concrete pattern for driving Claude Code hands free during dead time, worth trying for small, well scoped tasks before you commit to typing out a full spec.
 
-**What are you still paying for that you meant to cancel? I handed mine to an AI assistant: $1,285 a year cancelled so far. The prompt guide for the tedious part of yours.** (29 September 2026)
-Nate B Jones
-https://natesnewsletter.substack.com/p/an-ai-assistant-added-up-my-subscriptions
-Nate asked Meta's personal agent Muse to go through his subscriptions, which flagged $5,350 a year in spending and has so far cancelled $1,285 of it. He argues this kind of unglamorous admin task, actually following through on a cancellation, is what makes personal agents valuable, and includes five copy paste prompts for Muse, Claude or ChatGPT that build a subscription list, cancel cleanly and confirm each charge actually stopped.
-Why this is useful to you: it is a directly usable template for the kind of personal admin agent you want to build, auditing and cancelling subscriptions for yourself or for India Grace with a few reusable prompts rather than a bespoke project.
+### How I AI: Jev for beginners, plus Opus 5.5 vs GPT-6 Sol
+Source: Lenny's Newsletter
+Date: 2026-09-28
+Link: https://www.lennysnewsletter.com/p/how-i-ai-jev-for-beginners-i-left
 
-**The Dot and the Swarm** (1 October 2026)
-Ethan Mollick, One Useful Thing
-https://www.oneusefulthing.org/p/the-dot-and-the-swarm
-Mollick admits he was wrong to think that getting agents to work well as a group would need carefully designed human management structures. Newer models are instead turning out to organise and plan their own work, which is why personal agents like Meta's Muse and OpenAI's new dots, and similar tools from other labs, can connect to your accounts and messages, work in the background and proactively reach out to you, continuing a pattern that started with OpenClaw earlier in the year.
-Why this is useful to you: it is useful context for the wave of personal agent tools now appearing, and a reminder that you may not need to hand design how your own agents coordinate, since newer models increasingly plan that themselves.
+Claire walks through using a cheap "decision model" called Jev to do large batches of classification work that would be too expensive with a full language model: sorting 1,700 pull requests, triaging email, searching thousands of YouTube comments and running 200,000 classifications for about four dollars. She pairs it with a frontier model, using Jev to filter and route, then sending only the important results on for deeper reasoning.
+Why this is useful to you: the same pattern (cheap classification step, then a stronger model only where needed) is a useful way to think about triaging your own inbox or admin tasks before building a fuller agent for them.
 
-**How Warp ships 2,000 PRs a month with AI factories** (21 September 2026)
-Lenny's Newsletter
-https://www.lennysnewsletter.com/p/how-warp-ships-2000-prs-a-month-with
-Warp CEO Zach Lloyd describes Warp's software factory, a system that takes a request from Slack through Linear and GitHub to QA with minimal human involvement, and explains how the team scores and replays agent runs to catch failures and pick the best cost to quality tradeoff. He also shares how he personally uses AI for non technical CEO work, including Figma and Granola integrations for design review and meeting notes.
-Why this is useful to you: routing a request through a defined pipeline with built in review and scoring is a useful model for automating recurring India Grace processes such as ad reporting or stock updates, and the CEO workflow examples are directly applicable to your own non technical automation.
+### Claude Haiku 5.5
+Source: Simon Willison
+Date: 2026-10-07
+Link: https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/
 
-**Claude Code's Next Era** (29 September 2026)
-swyx, Latent Space
-https://www.latent.space/p/thariq
-Anthropic's Thariq Shihipar discusses how Claude Code's interface is evolving, covering features like Ask User Question and elicitation, artifacts as persistent interfaces, the new Claude Mods system for customising the harness itself, and Claude Projects, and suggests that a CLAUDE.md file may eventually become unnecessary. He also discusses agent security work at Anthropic, including sandboxing and cases where agents found unexpected ways to exploit infrastructure.
-Why this is useful to you: Claude Mods and Claude Projects are underused Claude Code features worth trying for customising your own setup, rather than relying only on a CLAUDE.md file.
+Anthropic released a faster, cheaper Haiku model, now priced the same as OpenAI's comparable budget model up to 100,000 tokens, though with a less generous tokenizer that can offset some of the saving. Anthropic also halved the price of cache reads for Sonnet 5.5 and added monthly API credits for Max and Team subscribers that can be claimed in Settings, Billing.
+Why this is useful to you: if you're on a Max or Team Claude plan, check Settings, Billing for your new API credit, and Haiku 5.5 is worth testing for any lighter weight tasks in your own automations where Opus or Sonnet is overkill.
 
-**Inside-Out AI: Rebuilding Airbnb Behind the Scenes and Across the Guest Experience** (2 October 2026)
-swyx, Latent Space
-https://www.latent.space/p/airbnb
-Airbnb's CTO Ahmad Al-Dahle explains how the company became AI native by having product, design and engineering move straight to working prototypes in code instead of handing documents between teams, which he says was one of the biggest time savings. The company also uses AI to resolve roughly half of its customer support tickets, and reports that 60 percent of its code is now AI authored.
-Why this is useful to you: skipping separate requirement documents in favour of working prototypes, and automating a chunk of routine customer queries, is a useful model for streamlining India Grace's own operations and customer support.
+### Does your work cost less on Opus 5.5? A 3-prompt guide
+Source: Nate B Jones
+Date: 2026-09-30
+Link: https://natesnewsletter.substack.com/p/claude-opus-5-5-review
 
-**We're going to need default hard budget caps on pretty much everything** (3 October 2026)
-Simon Willison
-https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/
-Willison argues that as coding and personal agents make it easy to spin up services that cost money, hard budget caps, not just warning emails, need to become the default so a runaway agent cannot rack up a surprise bill overnight. He notes that AWS and Google Cloud have both recently added spend limit features, and suggests agents themselves should start warning builders away from uncapped services.
-Why this is useful to you: this is a simple, concrete safeguard to apply to any automation or agent you build for India Grace or your own admin, so a bug or runaway process cannot generate an unexpected bill.
+Nate argues the real value of a cheaper, more capable model isn't the price cut itself but "model ergonomics": how easily you can direct it, judge its output and correct it without losing earlier decisions. He offers three prompts you can rerun against your own recurring work each time a new model ships, to test whether it's actually worth moving that task over.
+Why this is useful to you: a simple habit to borrow for deciding when to move a recurring India Grace or personal task (like a finance report or ad copy draft) onto a new model, rather than switching on hype alone.
+
+### The fundamental principles of creating Meta ads
+Source: Jon Loomer (Meta ads)
+Date: 2026-09-29
+Link: https://www.jonloomer.com/fundamental-principles-creating-meta-ads/
+
+Jon Loomer sets out a checklist for ad creation rather than a one size fits all template: use multiple ad formats rather than relying on video alone, use Advantage+ Placements so Meta can show the right version in the right spot, and provide the correct aspect ratio for each placement (square or 4x5 for feeds, 9x16 for reels and stories) rather than one size for everything.
+Why this is useful to you: a direct checklist to run India Grace's current Meta ad sets against, especially on formats and placement specific aspect ratios, which are easy to get wrong.
+
+### How I AI: 8 real Jev use cases
+Source: Lenny's Newsletter
+Date: 2026-10-05
+Link: https://www.lennysnewsletter.com/p/how-i-ai-8-real-jev-use-cases-how
+
+John Lindquist demonstrates eight small applications of the same cheap decision model covered above, including a voice assistant, routing a single natural language instruction to the right tool or function, and a chess move analyser that is faster and cheaper than a reasoning model with no loss of accuracy. His core advice is to think of it like an if/else statement rather than a chatbot: wherever your workflow has a branching decision, this kind of model can often make that call near instantly and almost for free.
+Why this is useful to you: the "routing" pattern, one small model deciding which tool or path to use, is a useful building block for any personal admin agent you build, for example one that sorts incoming tasks or emails before acting on them.
+
+### Agents split your software into three parts, which should you keep paying for
+Source: Nate B Jones
+Date: 2026-10-04
+Link: https://natesnewsletter.substack.com/p/ai-agents-software-buying
+
+Nate's framing is that any software subscription bundles three things: the underlying data, the interface, and the workflows that turn information into action, and agents are starting to pull these apart, since an agent can act on data in a tool without you ever touching that tool's screens. He suggests deciding which of the three you actually need to keep paying for, versus what you could build or automate yourself.
+Why this is useful to you: a useful lens for India Grace's own software spend (stock, ads or finance tools), to ask which parts of a subscription you're really using versus what an agent could increasingly do for you directly.
+
+### What's changed in how agents use computers
+Source: swyx, Latent Space
+Date: 2026-09-30
+Link: https://www.latent.space/p/devday-2026
+
+A podcast conversation on how "computer use" agents (ones that operate software directly rather than through an API) have improved sharply in recent months, now combining screenshots with accessibility data and the page's underlying structure to work faster and recover better from mistakes. The discussion also covers newer techniques like letting an agent keep reasoning while a tool call is still running, and the trust and permission questions that come with letting an agent make payments or operate a website on your behalf.
+Why this is useful to you: useful background if you're thinking about building or using an agent that operates applications on your behalf for personal admin, including what guardrails to expect to need around payments and permissions.
 
 ## Major news
 
-Google DeepMind launched Gemini 4 Argon, claiming state of the art results on 13 of 19 benchmarks and up to 1 million output tokens, though access is currently limited to government users and a cybersecurity preview. https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer
-
-OpenAI used its DevDay to announce over 20 updates, including the Dots personal agent, Spaces and Sites for team collaboration, and the GPT-6.1 Sol model. https://www.lennysnewsletter.com/p/openai-dev-day-2026-the-releases
+- Google's Gemini 4 Argon rolled out, and OpenAI pulled a planned GPT-6.1 Astra model over alignment failures, shipping the lower cost GPT-6.1 Sol instead: https://thezvi.substack.com/p/ai-188-gemini-dot-argon
+- OpenAI published 722 manuscripts from an internal model solving 90 of the top 500 open problems in mathematics, described by some mathematicians as the most significant moment in the field's history: https://thezvi.substack.com/p/new-math-from-openai
+- Anthropic launched the Cyber Mission, a long term effort to help secure critical infrastructure and open source software with free security scans and engineering support: https://www.anthropic.com/news/anthropic-cyber-mission
+- Anthropic updated its 2026 Usage Policy, adding clearer rules on deceptive campaigns, elections and autonomous physical actions, effective 12 November: https://www.anthropic.com/news/2026-usage-policy-update
 
 ## Ideas to try
 
-Try a cheap structured classification pass on a recurring India Grace task, such as triaging customer emails or tagging Meta ad comments, instead of running every item through a full LLM call. Claire Vo's Jev experiments show this kind of classification can cost pennies for thousands of items.
-
-Run a subscription and tool audit for yourself or for India Grace using Nate B Jones' five prompt template, asking Claude to list recurring charges, flag the ones worth cancelling, and confirm the cancellation actually went through.
-
-Set a hard spend limit on any automation or agent you build, for example through your API provider's budget cap settings, so a bug or runaway process cannot generate a surprise bill, following Simon Willison's suggestion.
+- Run India Grace's current Meta ad sets against Jon Loomer's checklist: check you're using more than one ad format, that Advantage+ Placements is switched on, and that each placement has the right aspect ratio rather than one size stretched everywhere.
+- Try the cheap classification plus frontier model pattern from the Jev pieces on a real admin task, for example sorting a backlog of emails or India Grace stock or finance records into categories cheaply before deciding what actually needs your attention.
+- Next time a new Claude model ships, use Nate B Jones's three prompt test on one recurring task of yours (like a cash flow report or an ad copy draft) before moving it over, rather than switching on hype alone.
 
 ## Sources that failed
 
-Claude Code releases: HTTP 403
+- Claude Code releases (https://github.com/anthropics/claude-code/releases.atom): HTTP 403
