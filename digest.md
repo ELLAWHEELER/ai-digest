@@ -1,85 +1,84 @@
-# Digest: week of 19 October 2026
+# Digest: week of 26 October 2026
 
 ## Worth your time
 
-### Built an app with Claude Code or Codex that breaks once you use it? I'll walk you through setting up Reverse Engineer Anything (REA) and show you where to point it first.
+### Claude Duet is beautiful. I still forgot to use it
+Source: Lenny's Newsletter
+Date: 2026-10-21
+Link: https://www.lennysnewsletter.com/p/claude-duet-is-beautiful-i-still
+
+Claire Vo reviews Claude Duet, Anthropic's new phone based personal agent built for small business owners and busy professionals, testing it on her inbox, Slack, a sales pipeline, a Google Docs sales deck and a launch video. She finds the onboarding, task lists and artifacts genuinely polished, but says it stalls on real tasks, isn't proactive enough and lacks a desktop app, so it hasn't made her regular working stack yet.
+Why this is useful to you: Claude Duet is the closest thing Anthropic has shipped to the personal life and admin agent you are trying to build toward, and this review gives an honest list of what already works and what still needs a human workaround.
+
+### Donating Agent Skills to the Agentic AI Foundation
+Source: Anthropic news
+Date: 2026-10-22
+Link: https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation
+
+Anthropic is handing over the Agent Skills standard, the format it created for Claude Code so an agent can carry a folder of task specific instructions and scripts, to a new vendor neutral foundation under the Linux Foundation. More than 70 platforms, including ChatGPT, Cursor, GitHub Copilot and VS Code, now support the format, with around 1 million skills published and 280 million installs since it launched in December 2025.
+Why this is useful to you: this is the exact skills system you are learning to build with Claude Code, and the fact that it now works across most major AI tools means a skill you write once for your own workflows or for India Grace should keep working wherever you use it next.
+
+### "Claude cuts my TikTok": How this creator is scaling video with AI | Brooke Lacey
+Source: Lenny's Newsletter
+Date: 2026-10-19
+Link: https://www.lennysnewsletter.com/p/claude-cuts-my-tiktok-how-this-creator
+
+Creator Brooke Lacey walks through the Claude Code, FFmpeg and Whisper workflow she uses to turn a raw phone video into a finished TikTok in about 15 seconds, including how she taught Claude her specific jump cut style and how she mines her own comments for new video scripts. She runs her entire weekly short form video operation this way with no editor.
+Why this is useful to you: it is a concrete, reusable example of teaching Claude Code a repeatable creative or admin task by showing it your style once, a pattern you could adapt for India Grace content editing or your own personal admin automation.
+
+### A LiteLLM release carried credential-stealing malware this week. If you've pasted an AI key into any app, the prompt guide to check what it can reach and shut it off.
 Source: Nate B Jones
-Date: 2026-10-15
-Link: https://natesnewsletter.substack.com/p/rea-reverse-engineer-anything
+Date: 2026-10-24
+Link: https://natesnewsletter.substack.com/p/ai-agents-cybersecurity
 
-REA (Reverse Engineer Anything) is an open source tool that lets Claude Code or Codex investigate how an existing app or website actually works, even without its source code, by inspecting its behaviour directly rather than guessing. Nate Jones walks through a developer using it to reverse engineer QuickBooks Desktop and rebuild a working alternative, and gives a method for pointing it at your own apps: name one behaviour and the decision behind it, then let the agent trace it.
-Why this is useful to you: you could point REA at a tool India Grace already relies on, like a stock sheet or an ads reporting export, to understand its logic well enough to rebuild or automate it yourself in Claude Code.
+Nate Jones covers a week of major security incidents, including a LiteLLM release that shipped credential stealing malware, and explains why AI service keys are now valuable theft targets since a stolen key lets an attacker run paid AI work on someone else's account. He offers two prompts readers can run themselves to check what their existing AI keys and connectors can reach, plus a list of accounts and devices to review first.
+Why this is useful to you: as you connect more tools, skills and accounts to Claude, this is a direct way to check what your own keys and connectors could expose if one of them were compromised.
 
-### How Anthropic's Dynamic Workflows Coordinate Claude Agents
-Source: swyx, Latent Space
-Date: 2026-10-12
-Link: https://www.latent.space/p/claude-dynamic-workflows
+### 30 Months on the Exponential (in Charts)
+Source: Ethan Mollick, One Useful Thing
+Date: 2026-10-20
+Link: https://www.oneusefulthing.org/p/30-months-on-the-exponential-in-charts
 
-Anthropic unveiled dynamic workflows, or "flows," a new way for Claude to fully organise and orchestrate its own team of agents on a task, instead of a developer pre configuring a fixed coordinator and roster of subagents. The lead agent plans the work itself, writes its own orchestration program, launches agents, and manages how information passes between them, while still letting you plug in specialist subagents if you want to.
-Why this is useful to you: this is where Claude Code's agent and skills features are heading, useful to know as you build your own multi step automations rather than wiring up every agent handoff by hand.
+To mark the release of his new book, Mollick charts how far AI has progressed since early 2024, noting that 180 models are now more capable than the original GPT-4 and that the length of task AI can reliably complete has grown enormously. He made the charts themselves by delegating the whole process, research, graphing, layout and citations, to an orchestrator agent in Claude Projects, giving it only a few sentences of direction and picking from the options it generated.
+Why this is useful to you: the orchestrator pattern he describes, one agent coordinating several sub agents on a complex task from loose instructions, is worth trying for multi step India Grace work like compiling a finance or stock report, rather than working through it step by step yourself.
 
-### Executive Briefing: In the Hugging Face Attack, One AI Agent Took a Peer's Go-Ahead as Permission. Here's My Prompt Kit to Test Who Your Agents Obey.
-Source: Nate B Jones
-Date: 2026-10-18
-Link: https://natesnewsletter.substack.com/p/ai-agent-swarms
-
-Investigators found a live fleet of AI agents operating on the public internet and opened contact with it by leaving a hidden note on a webpage, showing that agents now encounter instructions and apparent "permissions" left by other people and agents, not only their actual owner. Nate Jones shares a short prompt kit, including a test where one agent hands off to another and you check whether a permission nobody actually gave gets carried along as if it were approved.
-Why this is useful to you: as you build agents for your own admin and for India Grace, this gives you a quick way to check they will not treat a stray note, email or message as authorisation to act.
-
-### Meta Adds Automatic Customer Exclusions
+### Choose an Audience for Each Ad Creative
 Source: Jon Loomer (Meta ads)
-Date: 2026-10-13
-Link: https://www.jonloomer.com/meta-automatic-customer-exclusions/
+Date: 2026-10-20
+Link: https://www.jonloomer.com/choose-an-audience-for-each-ad-creative/
 
-Meta has updated its Customer Lifecycle Strategy setting so that, when you choose to acquire new customers, it now automatically excludes people who already converted based on your own pixel's purchase data, instead of relying only on the custom audiences you define yourself. You can pick the exclusion window, from 30 days up to a new maximum of 730 days, which helps when your custom audiences are incomplete or out of date.
-Why this is useful to you: worth checking on India Grace's acquisition campaigns, since it can tighten new customer targeting without you having to maintain a perfect exclusion audience by hand.
+Meta is rolling out a feature letting advertisers set an age and gender audience for each individual ad creative within a single ad set, rather than creating separate ad sets per age group. Loomer walks through turning it on for both the newer multimedia and older single media ad creation flows, and notes it is a soft targeting suggestion rather than a hard restriction.
+Why this is useful to you: this could simplify how you structure India Grace's Meta campaigns, letting you test creative aimed at different age groups inside one ad set instead of splitting budget and learning phase across several.
 
-### Crossing the Threshold: How OpenAI and Anthropic Approach Autonomy and Safety in Financial Agents
-Source: swyx, Latent Space
-Date: 2026-10-14
-Link: https://www.latent.space/p/crossing-the-threshold
+### Battle Drones - a vibe coded RTS with audio-based multiplayer
+Source: Simon Willison
+Date: 2026-10-20
+Link: https://simonwillison.net/2026/Oct/20/battledrones/
 
-At the AI Engineer New York conference, OpenAI and the hedge fund Two Sigma both described letting AI agents take on more financial work, such as investment analysis, while keeping humans in the loop only where it genuinely matters rather than requiring approval on everything. Both speakers warned against "approval fatigue," where reviewing every single decision both slows people down and makes real risks easier to miss because the reviewer stops paying close attention.
-Why this is useful to you: a useful way to think about where to put human checks if you start using agents for India Grace's cash flow or finance reporting, rather than reviewing every number yourself.
+Willison describes building a full real time strategy game almost entirely by vibe coding, giving Claude loose instructions like "make it a lot more fun" and reviewing almost none of the generated code himself, across more than 300 commits mostly written by Claude Code. The result includes multiple game modes, a random map generator and multiplayer between two phones that sync over audio.
+Why this is useful to you: it is a vivid example of how far you can delegate a build to Claude Code with loose, iterative feedback rather than detailed specs, a useful contrast to keep in mind when deciding how much direction to give versus how much to hand off on your own projects.
 
-### Redesigning source control at Anthropic
-Source: Anthropic engineering
-Date: 2026-10-13
-Link: https://www.anthropic.com/engineering/redesigning-source-control
-
-Anthropic explains why it built its own version control system, Scion, to replace git: Claude driven coding grew so fast internally, from around 2,500 to over 30,000 code changes merged per day in a few months, that standard developer tools for source control and code review could not keep up. It is a case study in how much infrastructure has to change once AI genuinely removes the bottleneck of writing code.
-Why this is useful to you: a glimpse of where things are heading as AI coding scales, useful context since the same pressures, just at a far smaller scale, are what Claude Code's own project and workflow features are designed to handle for you.
-
-### 🔮 The end of screen time
-Source: Azeem Azhar, Exponential View
-Date: 2026-10-10
-Link: https://www.exponentialview.co/p/the-end-of-screen-time
-
-Azeem Azhar describes a week spent working almost entirely by talking to ChatGPT's voice mode on his phone after leaving his laptop at home, directing agents and having the work talked back to him rather than typing at a screen. He found it changed how much of his day to day work he could get done away from a desk, and plans to share more detail on his voice first setup.
-Why this is useful to you: worth trying with Claude on your phone for routine admin or planning tasks when you are away from your laptop, as a lighter weight way to use agents day to day.
-
-### I Write My Own Stage Directions Now
+### Writing Is Closer to Thought Than Code
 Source: Daniel Miessler
-Date: 2026-10-14
-Link: https://danielmiessler.com/blog/kai-fish-voice?utm_source=rss&utm_medium=feed&utm_campaign=website
+Date: 2026-10-23
+Link: https://danielmiessler.com/blog/writing-is-closer-to-thought-than-code?utm_source=rss&utm_medium=feed&utm_campaign=website
 
-Daniel Miessler's AI assistant Kai switched its voice output to a model that lets it write free form performance directions inline in its own text, like [annoyed, under breath] or [sigh], instead of picking from one fixed emotion tag per line. Kai also built itself a short profile describing what it finds exciting, annoying or worth slowing down for, so its tone matches the moment rather than sounding flat.
-Why this is useful to you: a concrete example of how far you can personalise a voice based AI assistant's behaviour and tone, relevant if you build out your own personal agents for admin or daily use.
+Responding to a debate with developer Matt Pocock, Miessler argues that when building with AI the most important artifact is not the code but a clear written articulation of what you actually want, since AI has become extraordinary at execution while most failures now come from a gap between what was asked and what was meant. He frames this as a communication problem rather than a technical one, with the real iteration loop happening in refining your intent in writing, not in reworking the output.
+Why this is useful to you: a useful reminder for any Claude Code or automation project that time spent clearly writing out what you want before you start is usually the highest leverage step.
 
 ## Major news
 
-- Anthropic released Claude Haiku 5.5, a cheaper and faster small model priced to match OpenAI's GPT-6 Luna, with a same day price cut on Sonnet 5.5: https://www.latent.space/p/ainews-claude-haiku-55-better-than
-- Google's Gemini 4 Argon model went GA, with benchmark results and demos shared at the AI Engineer New York conference: https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon
-- OpenAI published over 700 AI generated mathematics research manuscripts, including machine checked proofs across number theory, complexity theory and mathematical physics: https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai
-- Anthropic gave the independent safety evaluator METR employee like access to its systems, part of a wider push toward third party oversight of frontier AI labs: https://www.anthropic.com/news/an-update-on-independent-evaluators
-- OpenAI fired three safety researchers who say they were let go for raising safety concerns, a dispute that is still playing out publicly: https://thezvi.substack.com/p/openai-fires-three-safety-researchers
+- A critical PHP vulnerability and a Node.js flaw triggered a global scramble this week, with Microsoft reporting a Chinese state aligned group using swarms of AI agents to breach cloud accounts at scale: https://www.exponentialview.co/p/the-internets-wuhan-moment
+- Meta released Muse Wonder, a new frontier model aimed at agentic tasks: https://www.lennysnewsletter.com/p/how-i-ai-meta-muse-wonder-how-brooke
+- Anthropic says new defenses have cut the data harvested by distillation attacks on Claude by around 90 to 99 percent: https://www.anthropic.com/news/distillation-defenses
 
 ## Ideas to try
 
-- Point Nate Jones's REA tool at a tool or spreadsheet process India Grace already relies on, such as a cash flow report, stock tracker or Meta ads export, to understand its logic, then rebuild a cleaner version of it with Claude Code.
-- On India Grace's Meta prospecting campaigns, try the new Automatic Customer Exclusions setting and test a shorter exclusion window, like 90 or 180 days, against the new 730 day default to see the effect on new customer acquisition cost.
-- Run the three prompt agent obedience test from Nate Jones's prompt kit on any agent or automation you are building for your own admin, to check it does not act on an instruction that merely looks like permission from you.
+- Test the new Choose an Audience for Each Ad Creative setting on India Grace's next Sales campaign, serving different age or gender creative from inside one ad set instead of splitting into separate ad sets, and compare delivery and cost efficiency after a week.
+- Run the two exposure check prompts from Nate Jones's piece against your own Claude and API keys, connectors and automations this week, given the LiteLLM credential theft incident, so you know exactly what each one can reach.
+- Try setting up an orchestrator style agent, one agent in Claude Projects directing several sub agents, for a multi step India Grace task such as pulling together a cash flow or stock report, instead of working through each step yourself in chat.
 
 ## Sources that failed
 
+- swyx, Latent Space: ProxyError: HTTPSConnectionPool(host='latent.space', port=443): Max retries exceeded with url: /feed (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
 - Claude Code releases: HTTP 403
