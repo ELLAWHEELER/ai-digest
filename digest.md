@@ -1,84 +1,85 @@
-# Digest: week of 26 October 2026
+# Digest: week of 2 November 2026
 
 ## Worth your time
 
-### Claude Duet is beautiful. I still forgot to use it
-Source: Lenny's Newsletter
-Date: 2026-10-21
-Link: https://www.lennysnewsletter.com/p/claude-duet-is-beautiful-i-still
-
-Claire Vo reviews Claude Duet, Anthropic's new phone based personal agent built for small business owners and busy professionals, testing it on her inbox, Slack, a sales pipeline, a Google Docs sales deck and a launch video. She finds the onboarding, task lists and artifacts genuinely polished, but says it stalls on real tasks, isn't proactive enough and lacks a desktop app, so it hasn't made her regular working stack yet.
-Why this is useful to you: Claude Duet is the closest thing Anthropic has shipped to the personal life and admin agent you are trying to build toward, and this review gives an honest list of what already works and what still needs a human workaround.
-
-### Donating Agent Skills to the Agentic AI Foundation
-Source: Anthropic news
-Date: 2026-10-22
-Link: https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation
-
-Anthropic is handing over the Agent Skills standard, the format it created for Claude Code so an agent can carry a folder of task specific instructions and scripts, to a new vendor neutral foundation under the Linux Foundation. More than 70 platforms, including ChatGPT, Cursor, GitHub Copilot and VS Code, now support the format, with around 1 million skills published and 280 million installs since it launched in December 2025.
-Why this is useful to you: this is the exact skills system you are learning to build with Claude Code, and the fact that it now works across most major AI tools means a skill you write once for your own workflows or for India Grace should keep working wherever you use it next.
-
-### "Claude cuts my TikTok": How this creator is scaling video with AI | Brooke Lacey
-Source: Lenny's Newsletter
-Date: 2026-10-19
-Link: https://www.lennysnewsletter.com/p/claude-cuts-my-tiktok-how-this-creator
-
-Creator Brooke Lacey walks through the Claude Code, FFmpeg and Whisper workflow she uses to turn a raw phone video into a finished TikTok in about 15 seconds, including how she taught Claude her specific jump cut style and how she mines her own comments for new video scripts. She runs her entire weekly short form video operation this way with no editor.
-Why this is useful to you: it is a concrete, reusable example of teaching Claude Code a repeatable creative or admin task by showing it your style once, a pattern you could adapt for India Grace content editing or your own personal admin automation.
-
-### A LiteLLM release carried credential-stealing malware this week. If you've pasted an AI key into any app, the prompt guide to check what it can reach and shut it off.
+### Five controls to set before you let an AI agent buy, pay, or cancel anything for you, so it finishes the job without spending money you didn't approve.
 Source: Nate B Jones
-Date: 2026-10-24
-Link: https://natesnewsletter.substack.com/p/ai-agents-cybersecurity
+Date: 2026-10-31
+Link: https://natesnewsletter.substack.com/p/ai-agents-website-access
 
-Nate Jones covers a week of major security incidents, including a LiteLLM release that shipped credential stealing malware, and explains why AI service keys are now valuable theft targets since a stolen key lets an attacker run paid AI work on someone else's account. He offers two prompts readers can run themselves to check what their existing AI keys and connectors can reach, plus a list of accounts and devices to review first.
-Why this is useful to you: as you connect more tools, skills and accounts to Claude, this is a direct way to check what your own keys and connectors could expose if one of them were compromised.
+Nate Jones looks at what happens when you let an AI agent complete real world tasks like booking a hotel or buying something, and how new trust systems from Cloudflare, Google, Stripe, Visa and Meta are shaping which agents websites will actually let in. He lays out five specific controls to put in place before handing an agent a first real task: narrow its access, require approval at specific points, and check where the result actually lands.
+Why this is useful to you: This is directly about the kind of personal agent you are building toward for your own life and admin, and gives a concrete checklist to use the first time you let one of your own agents spend money or book something on your behalf.
 
-### 30 Months on the Exponential (in Charts)
-Source: Ethan Mollick, One Useful Thing
-Date: 2026-10-20
-Link: https://www.oneusefulthing.org/p/30-months-on-the-exponential-in-charts
-
-To mark the release of his new book, Mollick charts how far AI has progressed since early 2024, noting that 180 models are now more capable than the original GPT-4 and that the length of task AI can reliably complete has grown enormously. He made the charts themselves by delegating the whole process, research, graphing, layout and citations, to an orchestrator agent in Claude Projects, giving it only a few sentences of direction and picking from the options it generated.
-Why this is useful to you: the orchestrator pattern he describes, one agent coordinating several sub agents on a complex task from loose instructions, is worth trying for multi step India Grace work like compiling a finance or stock report, rather than working through it step by step yourself.
-
-### Choose an Audience for Each Ad Creative
-Source: Jon Loomer (Meta ads)
-Date: 2026-10-20
-Link: https://www.jonloomer.com/choose-an-audience-for-each-ad-creative/
-
-Meta is rolling out a feature letting advertisers set an age and gender audience for each individual ad creative within a single ad set, rather than creating separate ad sets per age group. Loomer walks through turning it on for both the newer multimedia and older single media ad creation flows, and notes it is a soft targeting suggestion rather than a hard restriction.
-Why this is useful to you: this could simplify how you structure India Grace's Meta campaigns, letting you test creative aimed at different age groups inside one ad set instead of splitting budget and learning phase across several.
-
-### Battle Drones - a vibe coded RTS with audio-based multiplayer
+### The October inflection point for vibe game development
 Source: Simon Willison
+Date: 2026-10-28
+Link: https://simonwillison.net/2026/Oct/28/vibe-game-development/
+
+Simon Willison argues that October 2026 was the moment vibe coding games with AI crossed a real threshold, driven mainly by Claude Opus 5.5's jump in 3D modelling, music generation and game design judgement. He walks through browser based games he built with single prompts and almost no iteration, including one made entirely in the regular Claude chat interface without Claude Code.
+Why this is useful to you: It is a clear, low effort example of what Claude Opus 5.5 can now build unsupervised from a single good prompt, a useful benchmark for how far you can push "ask Claude to just build it" style requests in your own Claude Code experiments.
+
+### How To Use Decision Models for Evals
+Source: Hamel Husain
 Date: 2026-10-20
-Link: https://simonwillison.net/2026/Oct/20/battledrones/
+Link: https://hamel.dev/blog/posts/decision-model-evals/
 
-Willison describes building a full real time strategy game almost entirely by vibe coding, giving Claude loose instructions like "make it a lot more fun" and reviewing almost none of the generated code himself, across more than 300 commits mostly written by Claude Code. The result includes multiple game modes, a random map generator and multiplayer between two phones that sync over audio.
-Why this is useful to you: it is a vivid example of how far you can delegate a build to Claude Code with loose, iterative feedback rather than detailed specs, a useful contrast to keep in mind when deciding how much direction to give versus how much to hand off on your own projects.
+Hamel Husain tests several small decision models, fast classifiers from TypeSafe, Perplexity, Liquid, Cloudflare and OpenAI, as a cheaper alternative to using a large language model as a judge when running automated evals. He shows that the default 0.50 decision threshold these tools ship with is often wrong for a given task, and that tuning it against your own labelled examples can meaningfully improve accuracy without changing the model.
+Why this is useful to you: If you build any kind of automated checking into your Claude Code skills or agents, this is a practical reminder to tune the threshold against real examples rather than trusting a tool's default settings.
 
-### Writing Is Closer to Thought Than Code
-Source: Daniel Miessler
-Date: 2026-10-23
-Link: https://danielmiessler.com/blog/writing-is-closer-to-thought-than-code?utm_source=rss&utm_medium=feed&utm_campaign=website
+### Why Reddit built its own AI prototyping tool | Blair Metcalf
+Source: Lenny's Newsletter
+Date: 2026-10-26
+Link: https://www.lennysnewsletter.com/p/why-reddit-built-its-own-ai-prototyping
 
-Responding to a debate with developer Matt Pocock, Miessler argues that when building with AI the most important artifact is not the code but a clear written articulation of what you actually want, since AI has become extraordinary at execution while most failures now come from a gap between what was asked and what was meant. He frames this as a communication problem rather than a technical one, with the real iteration loop happening in refining your intent in writing, not in reworking the output.
-Why this is useful to you: a useful reminder for any Claude Code or automation project that time spent clearly writing out what you want before you start is usually the highest leverage step.
+Reddit's principal UX engineer Blair Metcalf explains Reddit Proto, an internal tool that lets designers turn ideas into working prototypes using real Reddit data, without touching GitHub, by connecting Cursor to a custom design system MCP that maps Reddit's components directly to production code. The tool has reached full adoption across Reddit's product and UX teams and produced more than 700 prototypes, with non engineers often getting the best results.
+Why this is useful to you: It is a working example of the pattern behind Claude Code skills and MCP connections, giving an AI tool a mapped out reference to your own system so it builds things that actually fit, worth copying in miniature for your own automations or for India Grace's reporting formats.
+
+### You delegated the work to agents and ended up with a new job: reading their updates. My guide to a Chief of Staff that brings you decisions with the evidence.
+Source: Nate B Jones
+Date: 2026-10-27
+Link: https://natesnewsletter.substack.com/p/ai-agent-overload
+
+Nate Jones describes a common failure mode once you start delegating tasks to multiple AI agents: the updates they send back pile up into a new job of reading and triaging them yourself. His fix is a Chief of Staff layer that closes out finished threads without spinning off new work, stays quiet unless something actually changed, and brings you a recommendation with the evidence rather than a raw list.
+Why this is useful to you: This is a direct answer to a problem you will likely hit as you build more agents for your own admin, worth building in from the start rather than retrofitting once your inbox of agent updates gets noisy.
+
+### Grok vs. Dot vs. Muse vs. Claude Duet: which one crushes the competition?
+Source: Lenny's Newsletter
+Date: 2026-10-28
+Link: https://www.lennysnewsletter.com/p/grok-vs-dot-vs-muse-vs-claude-duet
+
+Claire Vo ran the same nine real tasks, including a Slack reply, a Sentry bug fix, inbox triage and a Figma thumbnail, across four personal agents: Grok Bot, ChatGPT's Dot, Meta's Muse and Claude Duet, scoring each live. She comes away with a scoreboard and a clear view of which agent she would trust for work tasks versus personal ones.
+Why this is useful to you: It is a ready made comparison of the exact category of personal agent you are trying to build toward, useful for deciding which one to actually trial on your own admin tasks before building something custom.
+
+### Meta Clarifies Upcoming Placement Control Changes
+Source: Jon Loomer (Meta ads)
+Date: 2026-10-27
+Link: https://www.jonloomer.com/meta-placement-control-changes/
+
+Jon Loomer updates his earlier reporting now that Meta has officially confirmed it: ad set level placement control is being removed for Sales, Leads, App Promotion and Engagement campaign objectives, a wider set than he originally expected. Meta's suggested workarounds, customising creative per placement and using placement value rules to adjust bids, only partly make up for losing the ability to simply switch placements off.
+Why this is useful to you: This is a direct, imminent change to how India Grace's Meta campaigns can be configured, worth checking your active campaign objectives against this list now and testing placement value rules before the change lands.
+
+### How a 19-year-old intern built the growth engine behind this $2B AI company | Hector Serrano
+Source: Lenny's Newsletter
+Date: 2026-11-01
+Link: https://www.lennysnewsletter.com/p/how-a-19-year-old-intern-built-the
+
+Hector Serrano explains how he built Wispr Flow's paid user generated content program, paying a roster of 50 creators to produce 500 to 600 UGC ads a month, with top earners making over $13,000 a month, as part of a strategy that helped the company grow revenue 30x. He argues paid UGC, long used by direct to consumer brands, is still an underused growth lever for other companies willing to run it properly.
+Why this is useful to you: It is a concrete, adaptable playbook for a paid UGC creator program that India Grace could test at a much smaller scale alongside its existing Meta ads work.
 
 ## Major news
 
-- A critical PHP vulnerability and a Node.js flaw triggered a global scramble this week, with Microsoft reporting a Chinese state aligned group using swarms of AI agents to breach cloud accounts at scale: https://www.exponentialview.co/p/the-internets-wuhan-moment
-- Meta released Muse Wonder, a new frontier model aimed at agentic tasks: https://www.lennysnewsletter.com/p/how-i-ai-meta-muse-wonder-how-brooke
-- Anthropic says new defenses have cut the data harvested by distillation attacks on Claude by around 90 to 99 percent: https://www.anthropic.com/news/distillation-defenses
+- Google released Gemini 4 Argon, a notably stronger model with a lengthy new safety card, though a detailed read suggests it mostly confirms known risk patterns rather than raising new alarms: https://thezvi.substack.com/p/gemini-4-argon-the-model-and-safety
+- Anthropic filed its S-1 with the SEC, formally starting the process toward a Nasdaq listing under the ticker ANT: https://www.anthropic.com/news/s1-sec
+- New interpretability research from Goodfire suggests the inside of language models may be more understandable than assumed, a step that could make it easier to catch AI mistakes before they cause harm: https://thezvi.substack.com/p/i-can-see-everything
+- Microsoft offered a voluntary exit to around 60,000 employees, about 27 percent of its workforce, as AI infrastructure spending reshapes how big tech staffs itself: https://www.exponentialview.co/p/microsoft-is-making-room-for-machines
 
 ## Ideas to try
 
-- Test the new Choose an Audience for Each Ad Creative setting on India Grace's next Sales campaign, serving different age or gender creative from inside one ad set instead of splitting into separate ad sets, and compare delivery and cost efficiency after a week.
-- Run the two exposure check prompts from Nate Jones's piece against your own Claude and API keys, connectors and automations this week, given the LiteLLM credential theft incident, so you know exactly what each one can reach.
-- Try setting up an orchestrator style agent, one agent in Claude Projects directing several sub agents, for a multi step India Grace task such as pulling together a cash flow or stock report, instead of working through each step yourself in chat.
+- Before letting any personal agent (Claude Duet or otherwise) make a purchase or booking for you, set up Nate Jones's five controls on one low stakes task first, such as narrowing what it can access and requiring approval at a specific step, rather than giving it open ended access from the start.
+- Build a small reference file for India Grace, similar in spirit to Reddit's design system MCP, that captures brand colours, product terminology and your standard report formats, so any Claude Code skill you build for content or reporting already knows how India Grace looks and talks.
+- Check India Grace's active Meta campaign objectives against Jon Loomer's list (Sales, Leads, App Promotion, Engagement) now, since ad set level placement control is being removed for all of them, and test placement value rules as the workaround before the change lands.
 
 ## Sources that failed
 
-- swyx, Latent Space: ProxyError: HTTPSConnectionPool(host='latent.space', port=443): Max retries exceeded with url: /feed (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- swyx, Latent Space: ProxyError (unable to connect to proxy while fetching the feed)
 - Claude Code releases: HTTP 403
